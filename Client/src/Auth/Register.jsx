@@ -1,4 +1,4 @@
-import { useState , useEffect } from 'react';
+import { useState  } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 export const Register = () => {
@@ -8,6 +8,7 @@ export const Register = () => {
     const [age, setAge] = useState('');
     const [gender, setGender] = useState('');
     const [error, setError] = useState('');
+
 
     const handleRegister = async (e) => {
         e.preventDefault();
